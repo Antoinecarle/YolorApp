@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#1E88E5</color>
+    <color name="primary_dark">#1565C0</color>
+    <color name="primary_light">#64B5F6</color>
+    <color name="accent">#FFC107</color>
+    <color name="secondary">#43A047</color>
+    <color name="secondary_dark">#2E7D32</color>
+    
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="gray">#757575</color>
+    <color name="light_gray">#EEEEEE</color>
+    
+    <!-- Detection box colors -->
+    <color name="detection_box_stroke">#FFC107</color>
+    <color name="detection_box_background">#80FFC107</color>
+    <color name="detection_text_background">#CC000000</color>
+    <color name="detection_text_color">#FFFFFF</color>
+    
+    <!-- Performance metrics colors -->
+    <color name="performance_good">#43A047</color>
+    <color name="performance_medium">#FB8C00</color>
+    <color name="performance_poor">#E53935</color>
+</resources> 

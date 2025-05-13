@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/navigation_camera">
+
+    <fragment
+        android:id="@+id/navigation_camera"
+        android:name="com.example.yolorapp.ui.camera.CameraFragment"
+        android:label="@string/menu_camera"
+        tools:layout="@layout/fragment_camera">
+        <action
+            android:id="@+id/action_camera_to_result"
+            app:destination="@id/navigation_result"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_gallery"
+        android:name="com.example.yolorapp.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery">
+        <action
+            android:id="@+id/action_gallery_to_result"
+            app:destination="@id/navigation_result"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_settings"
+        android:name="com.example.yolorapp.ui.settings.SettingsFragment"
+        android:label="@string/menu_settings"
+        tools:layout="@layout/fragment_settings" />
+
+    <fragment
+        android:id="@+id/navigation_result"
+        android:name="com.example.yolorapp.ui.result.ResultFragment"
+        android:label="@string/result_title"
+        tools:layout="@layout/fragment_result">
+        <argument
+            android:name="imageUri"
+            app:argType="string" />
+        <argument
+            android:name="detectionResults"
+            app:argType="com.example.yolorapp.data.model.DetectionResults"
+            app:nullable="true" />
+        <action
+            android:id="@+id/action_result_to_camera"
+            app:destination="@id/navigation_camera"
+            app:popUpTo="@id/navigation_camera"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+</navigation> 

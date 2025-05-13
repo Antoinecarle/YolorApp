@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">YOLOR App</string>
+    
+    <!-- Menu items -->
+    <string name="menu_camera">Caméra</string>
+    <string name="menu_gallery">Galerie</string>
+    <string name="menu_settings">Paramètres</string>
+    
+    <!-- Camera screen -->
+    <string name="btn_capture">Capturer</string>
+    <string name="btn_gallery">Galerie</string>
+    <string name="btn_settings">Paramètres</string>
+    <string name="capture_photo">Capturer une photo</string>
+    <string name="open_gallery">Ouvrir la galerie</string>
+    <string name="settings">Paramètres</string>
+    <string name="camera_permission_required">Permission caméra requise pour cette fonctionnalité</string>
+    <string name="storage_permission_required">Permission stockage requise pour cette fonctionnalité</string>
+    
+    <!-- Results screen -->
+    <string name="result_title">Résultats de détection</string>
+    <string name="inference_time">Temps d\'inférence: %1$d ms</string>
+    <string name="detected_objects">Objets détectés: %1$d</string>
+    <string name="btn_back">Retour</string>
+    <string name="btn_share">Partager</string>
+    <string name="confidence_threshold">Seuil de confiance: %1$.2f</string>
+    
+    <!-- Settings screen -->
+    <string name="settings_title">Paramètres</string>
+    <string name="settings_model">Modèle</string>
+    <string name="settings_confidence_threshold">Seuil de confiance</string>
+    <string name="settings_use_gpu">Utiliser GPU</string>
+    <string name="settings_image_resolution">Résolution d\'image</string>
+    <string name="settings_show_metrics">Afficher les métriques</string>
+    <string name="settings_show_confidence">Afficher les scores de confiance</string>
+    
+    <!-- Dialogs -->
+    <string name="dialog_processing">Traitement de l\'image…</string>
+    <string name="dialog_loading_model">Chargement du modèle…</string>
+    <string name="dialog_error_title">Erreur</string>
+    <string name="dialog_error_model_loading">Erreur lors du chargement du modèle</string>
+    <string name="dialog_error_detection">Erreur lors de la détection</string>
+    
+    <!-- Error messages -->
+    <string name="error_model_not_found">Modèle introuvable dans les assets</string>
+    <string name="error_image_processing">Erreur lors du traitement de l\'image</string>
+    <string name="error_camera_unavailable">Caméra indisponible</string>
+    
+    <!-- Content descriptions -->
+    <string name="desc_capture_button">Bouton de capture d\'image</string>
+    <string name="desc_gallery_button">Bouton d\'accès à la galerie</string>
+    <string name="desc_settings_button">Bouton d\'accès aux paramètres</string>
+    <string name="desc_detection_image">Image avec détections</string>
+</resources> 
